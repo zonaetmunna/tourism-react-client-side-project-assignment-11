@@ -1,0 +1,44 @@
+[
+     {
+          "name": "Discover CostaRica",
+          "place": "costarica,panama",
+          "description": "Natural history is an important special interest sector of Costa Rica's small tourism industry. International visitors who travel to Costa Rica for natural history include a substantial number of tropical biologists from the USA. Many are students, researchers, and professors who undertake training and research in Costa Rica under the auspices of the Organization for Tropical Studies (OTS). A survey of OTS participants and associates determined a high incidence of return visitation to Costa Rica, mainly for professional reasons. Return visitation appears related to some measure of professional seniority combined with freedom to travel. Individuals in OTS claim to influence many other persons to visit Costa Rica. The results suggest that science tourism, regarded as a subcomponent of nature tourism, merits serious attention in certain small countries like Costa Rica.",
+          "servicePrice": "1870/perperson",
+          "img": "https://i.ibb.co/61zpq5y/1.jpg"
+     },
+     {
+          "name": "Hiking Peru",
+          "place": "Peru, Bolivia",
+          "description": "Peru and Bolivia are both lands of the epic and that which must be seen to be believed. This 25-day odyssey takes you to the world’s highest-navigable lake (Titicaca), the world’s largest tropical rainforest (the Amazon), the world’s highest administrative capital (La Paz) and the world’s largest salt flats (Uyuni). It also includes the chance to trek the Inca Trail before emerging above Machu Picchu, which isn’t actually a world-record holder but probably should be for ‘best ancient city in the clouds’. In between the gasps you can ramble through markets, sipping Pisco sours and munching ceviche with locals..",
+          "servicePrice": "2830 /per person",
+          "img": "https://i.ibb.co/stvwfhj/2.jpg"
+     },
+     {
+          "name": "Explore and Sailing",
+          "place": "Thailand, Cambodia",
+          "description": "he Cambodia Business Council in Thailand (CBC) says it is hoping to hear from the government as early as this month about visa changes that could come into force soon. They would first allow tourists to visit Sihanoukville before the Kingdom is fully opened to foreign visitors, according to CBC’s president Sothea SambathCBC Thailand is a collection of entrepreneurs who work closely with the Cambodian embassy in Bangkok to promote bilateral trade and investment. It has adopted the “economic diplomacy” strategy suggested by Cambodia’s Foreign Affairs Ministry, forging links with Thai business associations and local companies.",
+          "servicePrice": "1670 /per person",
+          "img": "https://i.ibb.co/C5ntTM0/3.jpg"
+     },
+     {
+          "name": "\tWondering Cuba",
+          "place": "Cuba, Havana",
+          "description": "The city is located on La Habana (Havana) Bay on the island’s north coast. It is the largest city in the Caribbean region and has one of the great treasuries of historic colonial preserves in the Western Hemisphere. Prior to 1959, when Fidel Castro came to power, it was a mecca for tourists from the United States, who were drawn by the city’s many attractions, which included climate and nightlife in addition to history. During the following years, however, despite its continued importance as the island’s major economic hub, Havana lost much of its lustre, because Castro’s socialist government redirected the country’s resources primarily toward the improvement of conditions in rural Cuba. Havana thus deteriorated, even though rehabilitation projects began in the 1980s. The city’s Old Havana (La Habana Vieja) district and its fortifications were designated a UNESCO World",
+          "servicePrice": "1670 /per person",
+          "img": "https://i.ibb.co/MMX5Rw2/4.jpg"
+     },
+     {
+          "name": "\tForest Adventure",
+          "place": "Peyto Lake of Banff",
+          "description": "Peyto Lake is the most famous lake in Banff National Park you may have heard of. It’s a turquoise blue glacier-fed lake 40 km north of Lake Louise and a popular stop on the famous Icefields Parkway. The brilliant display of blue is fed by the Peyto Glacier high above the lake and part of the Wapta Icefield.The viewpoint is one of the most spectacular in all of Banff National Park and a super popular spot for photographers. Peyto Lake, in our opinion, competes for beauty with Moraine Lake without as many visitors. There is little mystery as the lake’s viewpoint is a must for things to do in Banff",
+          "servicePrice": "1970 /per person",
+          "img": "https://i.ibb.co/kMzhsL3/5.jpg"
+     },
+     {
+          "name": "\tExplore and Sailing",
+          "place": "Sailing, Pacific",
+          "description": "Polynesia is one of the best regions of the Pacific to sail in, thanks to its warm and comparatively mild weather. The region is home to many popular and well-kept destinations, such as the Hawaiian Islands. Polynesia is a popular region for American sailors due to its proximity to the U.S. West Coast and its reliable trade winds.The weather In Polynesia is warm and tropical, and the eastern part of the region is relatively safe from Typhoons.Typhoons, which are Pacific hurricanes, are the primary weather threat to Pacific sailors.",
+          "servicePrice": "1270 /per person",
+          "img": "https://i.ibb.co/pbxc2rt/6.jpg"
+     }
+]
