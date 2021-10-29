@@ -1,0 +1,35 @@
+[debug] [2021-10-29T17:30:13.158Z] ----------------------------------------------------------------------
+[debug] [2021-10-29T17:30:13.161Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-10-29T17:30:13.161Z] CLI Version:   9.21.0
+[debug] [2021-10-29T17:30:13.162Z] Platform:      win32
+[debug] [2021-10-29T17:30:13.162Z] Node Version:  v14.16.0
+[debug] [2021-10-29T17:30:13.163Z] Time:          Fri Oct 29 2021 23:30:13 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-10-29T17:30:13.163Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-29T17:30:13.174Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-29T17:30:13.174Z] > authorizing via signed-in user (zonaetmonna2233@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\course-web development-with -jankar sir-part2\milestone-11-nodejs-backend-and-database-integrate\module-68-bakend-database-assainment\react-travel-site
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-10-29T17:30:25.342Z] > refreshing access token with scopes: []
+[debug] [2021-10-29T17:30:25.343Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-29T17:30:25.775Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Fri, 29 Oct 2021 17:30:31 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-29T17:30:25.807Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-10-29T17:30:26.917Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-10-29T17:30:26.917Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
