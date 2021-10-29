@@ -18,12 +18,11 @@ const Header = () => {
 
                               </Nav>
                               <Nav>
-                                   {user.email && <Navbar.Text>
-                                        Signed in as:{user.displayNamed}
-                                   </Navbar.Text>}
+                                   {user.email && <Nav.Link as={Link} to="/myOrder">my order</Nav.Link>}
+                                   {user.email && <Nav.Link as={Link} to="/manageAllOrders">Manage All Orders</Nav.Link>}
+                                   {user.email && <Nav.Link as={Link} to="/addNewService">Add New service</Nav.Link>}
+
                                    {user.email ? <Button onClick={logOut}>LogOut</Button> : <Nav.Link as={Link} to="/login">Login</Nav.Link>}
-
-
                               </Nav>
                          </Navbar.Collapse>
                     </Container>

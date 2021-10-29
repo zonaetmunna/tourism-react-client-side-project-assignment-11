@@ -7,7 +7,7 @@ const Service = ({ service }) => {
      const history = useHistory();
 
      const handleBooking = id => {
-          history.push(`/booking/${_id}`)
+          history.push(`/orderPlaced/${_id}`)
      }
 
      return (
@@ -16,7 +16,7 @@ const Service = ({ service }) => {
                     <Card>
                          <Card.Img variant="top" src={img} width="" height="400" />
                          <Card.Body>
-                              <Card.Title>name</Card.Title>
+                              <Card.Title>{name}</Card.Title>
                               <Card.Text> {place}</Card.Text>
                               <Card.Text> {servicePrice}</Card.Text>
                               <Button onClick={handleBooking} variant="primary">Booking</Button>

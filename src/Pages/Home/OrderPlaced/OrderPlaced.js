@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { Card, Col, Container, Row, Button } from 'react-bootstrap';
 import { useParams } from 'react-router';
 
-const Booking = () => {
+const OrderPlaced = () => {
      const { id } = useParams();
      const [service, setService] = useState([]);
      useEffect(() => {
@@ -16,6 +16,28 @@ const Booking = () => {
                     setService(data)
                });
      }, [])
+
+     const handleAddBooking = (id) => {
+
+
+          const url = 'http://localhost:5000/orderService';
+          fetch(url, {
+               method: "POST",
+               headers: {
+                    'content-type': 'application/json'
+               },
+               body: JSON.stringify(id)
+          })
+               .then(res => res.json())
+               .then(data => {
+                    if (data.insertedId) {
+
+                         alert('order added successfully');
+
+                    }
+               })
+     }
+
      return (
           <div>
                <h1>{id}</h1>
@@ -27,7 +49,7 @@ const Booking = () => {
                                    <Card.Body>
                                         <Card.Title>{service.name}</Card.Title>
                                         <Card.Text>{service.place}</Card.Text>
-                                        <Button variant="primary">Go somewhere</Button>
+                                        <Button variant="primary" onClick={() => handleAddBooking(service._id)}>Add to booking</Button>
                                    </Card.Body>
                               </Card>
                          </Col>
@@ -37,4 +59,4 @@ const Booking = () => {
      );
 };
 
-export default Booking;
+export default OrderPlaced;
