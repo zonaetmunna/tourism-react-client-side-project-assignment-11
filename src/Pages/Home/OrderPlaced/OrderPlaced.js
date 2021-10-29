@@ -8,7 +8,7 @@ const OrderPlaced = () => {
      const { id } = useParams();
      const [service, setService] = useState([]);
      useEffect(() => {
-          const url = `http://localhost:5000/services/${id}`;
+          const url = `https://calm-tor-36170.herokuapp.com/services/${id}`;
           fetch(url)
                .then(res => res.json())
                .then(data => {
@@ -20,7 +20,7 @@ const OrderPlaced = () => {
      const handleAddBooking = (id) => {
 
 
-          const url = 'http://localhost:5000/orderService';
+          const url = 'https://calm-tor-36170.herokuapp.com/services';
           fetch(url, {
                method: "POST",
                headers: {
