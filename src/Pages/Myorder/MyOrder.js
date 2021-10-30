@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Col, Row } from 'react-bootstrap';
+import { Card, Col, Row, Button } from 'react-bootstrap';
 
 const MyOrder = () => {
      const [orders, setOrders] = useState([]);
      useEffect(() => {
-          fetch('http://localhost:5000//orderService')
+          fetch('https://calm-tor-36170.herokuapp.com/orderService')
                .then(res => res.json())
                .then(data => {
                     setOrders(data);
@@ -22,6 +22,7 @@ const MyOrder = () => {
                                         <Card.Text>
                                              {order.email}
                                         </Card.Text>
+                                        <Button> Delete</Button>
                                    </Card.Body>
                               </Card>
                          </Col>)

@@ -13,6 +13,7 @@ import OrderPlaced from './Pages/Home/OrderPlaced/OrderPlaced';
 import MyOrder from './Pages/Myorder/MyOrder';
 import ManageAllOrders from './Pages/ManageAllOrders/ManageAllOrders';
 import AddNewService from './Pages/AddNewService/AddNewService';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -27,9 +28,9 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/orderPlaced/:id">
+            <PrivateRoute path="/orderPlaced/:id">
               <OrderPlaced></OrderPlaced>
-            </Route>
+            </PrivateRoute>
             <Route path="/login">
               <Login></Login>
             </Route>

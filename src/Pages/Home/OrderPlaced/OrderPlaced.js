@@ -20,9 +20,7 @@ const OrderPlaced = () => {
                });
      }, [])
 
-     const handleAddBooking = (id) => {
 
-     }
 
      const { register, handleSubmit, watch, formState: { errors } } = useForm();
      const onSubmit = (data) => {
@@ -57,7 +55,7 @@ const OrderPlaced = () => {
                                    <Card.Body>
                                         <Card.Title>{service.name}</Card.Title>
                                         <Card.Text>{service.place}</Card.Text>
-                                        <Button variant="primary" onClick={() => handleAddBooking(service._id)}>Add to booking</Button>
+                                        <Button variant="primary">Add to booking</Button>
                                    </Card.Body>
                               </Card>
                          </Col>
@@ -70,7 +68,7 @@ const OrderPlaced = () => {
                                    <br />
                                    <input {...register("id")} placeholder="service id" className="mb-2" />
                                    <br />
-                                   <input {...register("service name")} placeholder="service name" className="mb-2" />
+                                   <input {...register("serviceName")} placeholder="serviceName" className="mb-2" />
                                    <br />
                                    <input {...register("address")} placeholder="your address" className="mb-2" />
                                    <br />
