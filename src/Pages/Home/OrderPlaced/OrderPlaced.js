@@ -24,7 +24,7 @@ const OrderPlaced = () => {
 
      const { register, handleSubmit, watch, formState: { errors } } = useForm();
      const onSubmit = (data) => {
-          const url = 'http://localhost:5000/orderService';
+          const url = 'https://calm-tor-36170.herokuapp.com/orderService';
           fetch(url, {
                method: "POST",
                headers: {
