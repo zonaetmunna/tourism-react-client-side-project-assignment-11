@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Card, Col, Row, Button, Container } from 'react-bootstrap';
 
 const ManageAllOrders = () => {
      const [orders, setOrders] = useState([]);
@@ -32,15 +32,29 @@ const ManageAllOrders = () => {
      }
      return (
           <div>
-               <Row className="w-50 mx-auto">
-                    <Col>
-                         <ul>
+               <div className="">
+                    <Container className="m-5 p-4">
+                         <h1 className="text-center text-primary mb-5">Manage All Orders</h1>
+                         <Row sm={12} md={3} className="g-4">
+
                               {
-                                   orders.map(order => <li>{order.serviceName} {order.name} <button onClick={() => handleDelete(order._id)}>Delete</button></li>)
+                                   orders.map(order => <Col>
+                                        <Card className="shadow border-0 p-3">
+                                             <Card.Img variant="top" src="holder.js/100px160" />
+                                             <Card.Body>
+                                                  <Card.Text>order Owner : {order.name}</Card.Text>
+                                                  <Card.Title>service name : {order.serviceName}</Card.Title>
+                                                  <Card.Text>{order.id}</Card.Text>
+                                                  <Button onClick={() => handleDelete(order._id)}>Delete</Button>
+                                             </Card.Body>
+                                        </Card>
+                                   </Col>)
                               }
-                         </ul>
-                    </Col>
-               </Row>
+                         </Row>
+                    </Container>
+               </div>
+
+
           </div>
      );
 };

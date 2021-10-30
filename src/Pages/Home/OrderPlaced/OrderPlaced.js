@@ -22,7 +22,7 @@ const OrderPlaced = () => {
 
 
 
-     const { register, handleSubmit, watch, formState: { errors } } = useForm();
+     const { register, handleSubmit, watch, formState: { errors }, reset } = useForm();
      const onSubmit = (data) => {
           const url = 'https://calm-tor-36170.herokuapp.com/orderService';
           fetch(url, {
@@ -38,7 +38,7 @@ const OrderPlaced = () => {
                     if (data.insertedId) {
 
                          alert('order added successfully');
-
+                         reset('');
                     }
                })
 
@@ -46,31 +46,35 @@ const OrderPlaced = () => {
 
      return (
           <div>
-               <h1>{id}</h1>
-               <Container>
+
+               <Container className="m-5 p-3">
+                    <h3 className="text-center text-primary mb-5">Booking Details</h3>
                     <Row className="">
-                         <Col sm={6}>
-                              <Card >
+                         <Col sm={6} className="mb-3">
+                              <Card className="shadow-lg p-3">
                                    <Card.Img variant="top" src={service.img} />
                                    <Card.Body>
                                         <Card.Title>{service.name}</Card.Title>
-                                        <Card.Text>{service.place}</Card.Text>
-                                        <Button variant="primary">Add to booking</Button>
+                                        <Card.Text>place-Name : {service.place}</Card.Text>
+                                        <Card.Text>service-id :  {service._id}</Card.Text>
+                                        <Card.Text>{service.description}</Card.Text>
+
                                    </Card.Body>
                               </Card>
                          </Col>
-                         <Col>
+                         <Col xs={12} md={6} className="text-center  ">
                               <h3>Please Give your information</h3>
-                              <form onSubmit={handleSubmit(onSubmit)}>
-                                   <input {...register("name")} placeholder="your name" className="mb-2" />
+                              <form onSubmit={handleSubmit(onSubmit)} className="shadow-lg p-4">
+
+                                   <input {...register("name")} placeholder="your name" className="mb-2 p-1" />
                                    <br />
-                                   <input {...register("email")} placeholder="your email" className="mb-2" />
+                                   <input {...register("email")} placeholder="your email" className="mb-2 p-1" />
                                    <br />
-                                   <input {...register("id")} placeholder="service id" className="mb-2" />
+                                   <input value={service._id} {...register("id")} placeholder="service id" className="mb-2 p-1" />
                                    <br />
-                                   <input {...register("serviceName")} placeholder="serviceName" className="mb-2" />
+                                   <input value={service.name} {...register("serviceName")} placeholder="serviceName" className="mb-2 p-1 " />
                                    <br />
-                                   <input {...register("address")} placeholder="your address" className="mb-2" />
+                                   <input {...register("address")} placeholder="your address" className="mb-2 p-1" />
                                    <br />
 
                                    <input type="submit" value="booking" />

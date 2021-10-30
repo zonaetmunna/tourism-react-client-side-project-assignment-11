@@ -12,22 +12,24 @@ const MyOrder = () => {
      }, [])
      return (
           <div>
-               <Row xs={1} md={2} className="g-4">
-                    {
-                         orders.map(order => <Col>
-                              <Card>
-                                   <Card.Img variant="top" src="holder.js/100px160" />
-                                   <Card.Body>
-                                        <Card.Title>{order.service_name}</Card.Title>
-                                        <Card.Text>
-                                             {order.email}
-                                        </Card.Text>
-                                        <Button> Delete</Button>
-                                   </Card.Body>
-                              </Card>
-                         </Col>)
-                    }
-               </Row>
+               <div className="m-3 p-3">
+                    <h1 className="text-center text-primary mb-3">My Order</h1>
+                    <Row xs={1} md={4} className="g-4">
+                         {
+                              orders.map(order => <Col>
+                                   <Card className="shadow border-0 p-3">
+                                        <Card.Img variant="top" src="holder.js/100px160" />
+                                        <Card.Body>
+                                             <Card.Title>{order.serviceName}</Card.Title>
+
+
+                                        </Card.Body>
+                                   </Card>
+                              </Col>)
+                         }
+                    </Row>
+               </div>
+
           </div>
      );
 };

@@ -24,26 +24,29 @@ const AddNewService = () => {
      };
      return (
           <div>
-               <Row className="w-50 mx-auto">
-                    <Col>
-                         <h1>add new service</h1>
-                         <form onSubmit={handleSubmit(onSubmit)}>
+               <div className="m-5 p-3">
+                    <Row className="mx-auto text-center">
+                         <Col xs={12} md={12} className="shadow p-4">
+                              <h1 className="text-success">Add New Service</h1>
+                              <form onSubmit={handleSubmit(onSubmit)}>
 
-                              <input  {...register("name")} placeholder="name" />
-                              <br />
-                              <input {...register("place")} placeholder="place" />
-                              <br />
-                              <input {...register("description")} placeholder="Description" />
-                              <br />
-                              <input {...register("servicePrice")} placeholder="servicePrice" />
-                              <br />
-                              <input {...register("image")} placeholder="image url" />
-                              <br />
-                              <input type="submit" value="add service" />
-                         </form>
+                                   <input  {...register("name")} placeholder="name" className="m-2" />
+                                   <br />
+                                   <input {...register("place")} placeholder="place" className="m-2" />
+                                   <br />
+                                   <input {...register("description")} placeholder="Description" className="m-2" />
+                                   <br />
+                                   <input {...register("servicePrice")} placeholder="servicePrice" className="m-2" />
+                                   <br />
+                                   <input {...register("image")} placeholder="image url" className="m-2" />
+                                   <br />
+                                   <input type="submit" value="add service" className="m-2" />
+                              </form>
 
-                    </Col>
-               </Row>
+                         </Col>
+                    </Row>
+               </div>
+
           </div>
      );
 };
