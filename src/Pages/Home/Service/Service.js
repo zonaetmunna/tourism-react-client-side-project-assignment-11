@@ -13,7 +13,7 @@ const Service = ({ service }) => {
      return (
           <div>
                <Col>
-                    <Card>
+                    <Card className="shadow-lg p-3">
                          <Card.Img variant="top" src={img} width="" height="400" />
                          <Card.Body>
                               <Card.Title>{name}</Card.Title>

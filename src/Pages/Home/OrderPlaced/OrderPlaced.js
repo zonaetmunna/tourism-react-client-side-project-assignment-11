@@ -66,13 +66,15 @@ const OrderPlaced = () => {
                               <h3>Please Give your information</h3>
                               <form onSubmit={handleSubmit(onSubmit)} className="shadow-lg p-4">
 
-                                   <input {...register("name")} placeholder="your name" className="mb-2 p-1" />
-                                   <br />
+
+
                                    <input {...register("email")} placeholder="your email" className="mb-2 p-1" />
                                    <br />
                                    <input value={service._id} {...register("id")} placeholder="service id" className="mb-2 p-1" />
                                    <br />
                                    <input value={service.name} {...register("serviceName")} placeholder="serviceName" className="mb-2 p-1 " />
+                                   <br />
+                                   <input value={service.img} {...register("serviceImg")} placeholder="serviceName" className="mb-2 p-1 " />
                                    <br />
                                    <input {...register("address")} placeholder="your address" className="mb-2 p-1" />
                                    <br />
