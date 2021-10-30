@@ -45,12 +45,12 @@ const OrderPlaced = () => {
      };
 
      return (
-          <div>
+          <div className="m-5 p-3">
 
-               <Container className="m-5 p-3">
+               <Container className="">
                     <h3 className="text-center text-primary mb-5">Booking Details</h3>
                     <Row className="">
-                         <Col sm={6} className="mb-3">
+                         <Col sm={12} md={6} className="mb-3">
                               <Card className="shadow-lg p-3">
                                    <Card.Img variant="top" src={service.img} />
                                    <Card.Body>
@@ -62,7 +62,7 @@ const OrderPlaced = () => {
                                    </Card.Body>
                               </Card>
                          </Col>
-                         <Col xs={12} md={6} className="text-center  ">
+                         <Col sm={12} md={6} className="text-center  ">
                               <h3>Please Give your information</h3>
                               <form onSubmit={handleSubmit(onSubmit)} className="shadow-lg p-4">
 

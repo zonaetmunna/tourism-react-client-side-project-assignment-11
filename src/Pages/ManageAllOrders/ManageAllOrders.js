@@ -32,8 +32,8 @@ const ManageAllOrders = () => {
      }
      return (
           <div>
-               <div className="">
-                    <Container className="m-5 p-4">
+               <div className="m-5 p-4">
+                    <Container className="">
                          <h1 className="text-center text-primary mb-5">Manage All Orders</h1>
                          <Row sm={12} md={3} className="g-4">
 
@@ -51,11 +51,11 @@ const ManageAllOrders = () => {
                                    </Col>)
                               }
                          </Row>
-                    </Container>
-               </div>
+                    </Container >
+               </div >
 
 
-          </div>
+          </div >
      );
 };
 
