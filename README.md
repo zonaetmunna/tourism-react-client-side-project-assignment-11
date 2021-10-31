@@ -4,10 +4,10 @@
  and server side (https://calm-tor-36170.herokuapp.com/services)
 
 ## our site
- * this site help you booking truist country.
- * this site give some offer
- * we make this sie client and sever site use
- * use in site react react-bootstrap 
- * use in site react react-bootstrap 
+ * this site help you booking truist country and placed.
+ * this site give some discount
+ * we make this site client and sever site use
+ * use in site react react-bootstrap react hook form
+ * for backend we use node express and mongodb database
 
 
