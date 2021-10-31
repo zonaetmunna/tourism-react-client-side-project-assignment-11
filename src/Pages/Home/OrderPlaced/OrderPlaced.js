@@ -57,7 +57,7 @@ const OrderPlaced = () => {
                                         <Card.Title>{service.name}</Card.Title>
                                         <Card.Text>place-Name : {service.place}</Card.Text>
                                         <Card.Text>service-id :  {service._id}</Card.Text>
-                                        <Card.Text>service-Price :  {service.servicePrice}</Card.Text>
+                                        <Card.Text>service-Price : <i class="fas fa-dollar-sign"></i>  {service.servicePrice}</Card.Text>
                                         <Card.Text>{service.description}</Card.Text>
 
                                    </Card.Body>
@@ -66,17 +66,19 @@ const OrderPlaced = () => {
                          <Col sm={12} md={6} className="text-center  ">
                               <h3>Please Give your information</h3>
                               <form onSubmit={handleSubmit(onSubmit)} className="shadow-lg p-4">
-                                   <input type="text" {...register("userName")} placeholder="your name" className="mb-2 p-1" />
+                                   <input type="text" {...register("userName", { required: true })} placeholder="your name" className="mb-2 p-1" />
                                    <br />
-                                   <input type="email" {...register("Useremail")} placeholder="your email" className="mb-2 p-1" />
+                                   <input type="email" {...register("UserEmail", { required: true })} placeholder="your email" className="mb-2 p-1" />
                                    <br />
-                                   <input type="text" {...register("Useraddress")} placeholder="your address" className="mb-2 p-1" />
+                                   <input type="text" {...register("UserAddress", { required: true })} placeholder="your address" className="mb-2 p-1" />
                                    <br />
-                                   <input value={service._id} {...register("serviceId")} placeholder="service id" className="mb-2 p-1" />
+                                   <input value={service._id} {...register("serviceId", { required: true })} placeholder="service id" className="mb-2 p-1" />
                                    <br />
-                                   <input value={service.name} {...register("serviceName")} placeholder="serviceName" className="mb-2 p-1 " />
+                                   <input value={service.name} {...register("serviceName", { required: true })} placeholder="serviceName" className="mb-2 p-1 " />
                                    <br />
-                                   <input value={service.img} {...register("serviceImg")} placeholder="serviceName" className="mb-2 p-1 " />
+                                   <input value={service.servicePrice} {...register("servicePrice", { required: true })} placeholder="service-price" className="mb-2 p-1 " />
+                                   <br />
+                                   <input value={service.img} {...register("serviceImg", { required: true })} placeholder="serviceName" className="mb-2 p-1 " />
                                    <br />
 
                                    <input type="submit" value="booking" />

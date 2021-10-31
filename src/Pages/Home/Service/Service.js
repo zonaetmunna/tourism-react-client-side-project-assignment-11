@@ -18,8 +18,8 @@ const Service = ({ service }) => {
                          <Card.Body>
                               <Card.Title>{name}</Card.Title>
                               <Card.Text> {place}</Card.Text>
-                              <Card.Text> {servicePrice}</Card.Text>
-                              <Button onClick={handleBooking} variant="primary">Booking</Button>
+                              <Card.Text><i class="fas fa-dollar-sign"></i> {servicePrice}</Card.Text>
+                              <Button onClick={handleBooking} variant="primary" className="shadow">Booking</Button>
                          </Card.Body>
 
                     </Card>

@@ -10,7 +10,7 @@ const Banner = () => {
           height: '100vh'
      }
      return (
-          <div style={styles}>
+          <div style={styles} className="shadow">
                <Container style={{ fontFamily: 'Poppins' }}>
                     <Row>
                          <Col sm={12} md={6} className="text-dark mt-5">

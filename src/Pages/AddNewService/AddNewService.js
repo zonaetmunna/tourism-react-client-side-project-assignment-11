@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 
 
 const AddNewService = () => {
-     const { register, handleSubmit, watch, formState: { errors } } = useForm();
+     const { register, handleSubmit, reset } = useForm();
 
      const onSubmit = data => {
           fetch('https://calm-tor-36170.herokuapp.com/services', {
@@ -18,6 +18,7 @@ const AddNewService = () => {
                .then(data => {
                     if (data.insertedId) {
                          alert('services added successfully')
+                         reset();
                     }
                })
           console.log(data)
@@ -38,7 +39,7 @@ const AddNewService = () => {
                                    <br />
                                    <input {...register("servicePrice")} placeholder="servicePrice" className="m-2" />
                                    <br />
-                                   <input {...register("image")} placeholder="image url" className="m-2" />
+                                   <input {...register("img")} placeholder="image url" className="m-2" />
                                    <br />
                                    <input type="submit" value="add service" className="m-2" />
                               </form>

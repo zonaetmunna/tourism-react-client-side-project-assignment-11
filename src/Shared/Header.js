@@ -7,7 +7,7 @@ const Header = () => {
      const { user, logOut } = useAuth();
      return (
           <div style={{ fontFamily: 'Poppins' }}>
-               <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+               <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="shadow-lg">
                     <Container>
                          <Navbar.Brand as={Link} to="/home" className="text-primary">World Travel</Navbar.Brand>
                          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -22,6 +22,7 @@ const Header = () => {
                                    {user.displayName && <Nav.Link as={Link} to="/addNewService" className="text-white">Add New service</Nav.Link>}
 
                                    {user.displayName ? <Button onClick={logOut}>LogOut</Button> : <Nav.Link as={Link} to="/login" className="text-white">Login</Nav.Link>}
+                                   {user.displayName && <Nav.Link as={Link} to="">{user.displayName}</Nav.Link>}
                               </Nav>
                          </Navbar.Collapse>
                     </Container>
