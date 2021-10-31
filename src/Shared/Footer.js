@@ -9,7 +9,7 @@ const Footer = () => {
                          <Row className="p-3 m-3">
                               <Col xs={12} sm={4} className="">
                                    <h3 className="text-primary">World Travel</h3>
-                                   <p className="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur maxime sint nihil quo nisi totam quod libero consectetur vel fugit.</p>
+                                   <p className="text-white">Peru and Bolivia are both lands of the epic and that which must be seen to be believed. This 25-day odyssey takes you to the world’s highest-navigable lake</p>
                               </Col>
 
                               <Col xs={12} sm={4} className="text-white">
