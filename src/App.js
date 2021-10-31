@@ -14,6 +14,7 @@ import MyOrder from './Pages/Myorder/MyOrder';
 import ManageAllOrders from './Pages/ManageAllOrders/ManageAllOrders';
 import AddNewService from './Pages/AddNewService/AddNewService';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import NotPound from './Pages/NotPound/NotPound';
 
 function App() {
   return (
@@ -42,6 +43,9 @@ function App() {
             </Route>
             <Route path="/addNewService">
               <AddNewService></AddNewService>
+            </Route>
+            <Route path="*">
+              <NotPound></NotPound>
             </Route>
           </Switch>
           <Footer></Footer>
