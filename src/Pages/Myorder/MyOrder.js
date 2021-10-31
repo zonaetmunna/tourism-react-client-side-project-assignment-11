@@ -7,10 +7,13 @@ const MyOrder = () => {
           fetch('https://calm-tor-36170.herokuapp.com/orderService')
                .then(res => res.json())
                .then(data => {
+                    console.log(data)
                     setOrders(data);
+
                })
      }, [])
 
+     // delete order
      const handleDelete = (id) => {
           const proceeded = window.confirm('are you sure?');
           if (proceeded) {
@@ -29,18 +32,19 @@ const MyOrder = () => {
 
           }
      }
+
      return (
-          <div>
+          <div style={{ fontFamily: 'Poppins' }}>
                <div className="m-3 p-3">
                     <h1 className="text-center text-primary mb-3">My Order</h1>
                     <Row xs={1} md={4} className="g-4">
                          {
-                              orders.map(order => <Col>
+                              orders.map(order => <Col key={order._id}>
                                    <Card className="shadow border-0 p-3">
                                         <Card.Img variant="top" src={order.serviceImg} />
                                         <Card.Body>
                                              <Card.Title>{order.serviceName}</Card.Title>
-                                             <Card.Text>{order.id}</Card.Text>
+                                             <Card.Text>{order.serviceId}</Card.Text>
                                              <Button onClick={() => handleDelete(order._id)}>Delete</Button>
 
                                         </Card.Body>

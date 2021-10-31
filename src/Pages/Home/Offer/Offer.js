@@ -3,7 +3,7 @@ import { Col, Container, Image, Row, Button } from 'react-bootstrap';
 
 const Offer = () => {
      return (
-          <div >
+          <div style={{ fontFamily: 'Poppins' }} >
                <div className="mt-4 m-2 mb-4 bg-success shadow-lg">
                     <Container>
                          <Row className=" text-dark align-items-center">

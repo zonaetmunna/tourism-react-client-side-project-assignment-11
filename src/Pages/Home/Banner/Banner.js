@@ -11,16 +11,14 @@ const Banner = () => {
      }
      return (
           <div style={styles}>
-               <Container>
+               <Container style={{ fontFamily: 'Poppins' }}>
                     <Row>
-                         <Col className="text-dark mt-5">
-                              <h1>World tourism</h1>
-                              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet nostrum eligendi impedit, delectus incidunt quia provident odit totam. Voluptate ullam recusandae, consequuntur libero accusamus eaque a sit deserunt quos id.</p>
+                         <Col sm={12} md={6} className="text-dark mt-5">
+                              <h1>World Travel</h1>
+                              <h5>Peru and Bolivia are both lands of the epic and that which must be seen to be believed. This 25-day odyssey takes you to the world’s highest-navigable lake (Titicaca), the world’s largest tropical rainforest (the Amazon), the world’s highest administrative capital (La Paz) and the world’s largest salt flats (Uyuni)</h5>
                               <Button>Booking</Button>
                          </Col>
-                         <Col>
-                              <Image src="" />
-                         </Col>
+
                     </Row>
                </Container>
           </div>

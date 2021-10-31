@@ -31,7 +31,7 @@ const ManageAllOrders = () => {
           }
      }
      return (
-          <div>
+          <div style={{ fontFamily: 'Poppins' }}>
                <div className="m-5 p-4">
                     <Container className="">
                          <h1 className="text-center text-primary mb-5">Manage All Orders</h1>

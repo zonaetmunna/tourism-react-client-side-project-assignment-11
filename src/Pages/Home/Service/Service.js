@@ -6,12 +6,12 @@ const Service = ({ service }) => {
      const { _id, name, place, servicePrice, img } = service;
      const history = useHistory();
 
-     const handleBooking = id => {
+     const handleBooking = () => {
           history.push(`/orderPlaced/${_id}`)
      }
 
      return (
-          <div>
+          <div >
                <Col>
                     <Card className="shadow-lg p-3">
                          <Card.Img variant="top" src={img} width="" height="400" />

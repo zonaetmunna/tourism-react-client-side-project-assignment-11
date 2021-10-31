@@ -15,7 +15,7 @@ const Services = () => {
                })
      }, [])
      return (
-          <div className="m-3 p-3">
+          <div style={{ fontFamily: 'Poppins' }} className="m-3 p-3">
                <h3 className="text-center text-primary">Our Services</h3>
                <Row sm={12} md={3} className="g-4 ">
                     {

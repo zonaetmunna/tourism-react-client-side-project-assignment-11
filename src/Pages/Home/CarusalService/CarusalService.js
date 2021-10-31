@@ -8,7 +8,7 @@ const CarusalService = () => {
           setIndex(selectedIndex);
      };
      return (
-          <div className="mt-5">
+          <div style={{ fontFamily: 'Poppins' }} className="mt-5">
 
                <Row className="mx-auto text-center w-75 mt-5 mb-5 shadow-lg">
                     <h3 className="text-center text-primary">Our service Gallery</h3>

@@ -23,7 +23,7 @@ const AddNewService = () => {
           console.log(data)
      };
      return (
-          <div>
+          <div style={{ fontFamily: 'Poppins' }}>
                <div className="m-5 p-3">
                     <Row className="mx-auto text-center">
                          <Col xs={12} md={12} className="shadow p-4">
