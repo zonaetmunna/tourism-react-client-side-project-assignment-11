@@ -3,11 +3,11 @@
  and server side (https://calm-tor-36170.herokuapp.com/services)
 
 ## our site
- * this site help you booking truist country and placed.
- * this site give some discount
- * we make this site client and sever site use
- * use in site react react-bootstrap react hook form
- * for backend we use node express and mongodb database
- * this
+* A user selects any service and goes to the order placed for full details.
+* Users must login to order a service and redirect them to the previous page.
+* The user will be able to see all his orders and delete them if he wants.
+* A simple admin can see all the orders and he can add any service.
+* Implemented this project react,react-bootstrap,react-router , react-hook-form , firebase-authentication ,Node.js and express.js.  MongoDB is used for the database.
+
 
 
