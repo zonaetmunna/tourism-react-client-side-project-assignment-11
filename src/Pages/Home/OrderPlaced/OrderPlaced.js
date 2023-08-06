@@ -9,7 +9,7 @@ const OrderPlaced = () => {
   const [service, setService] = useState([]);
 
   useEffect(() => {
-    const url = `http://localhost:5000/services/${id}`;
+    const url = `https://tourism-react-server-side-project-assignment-11.vercel.app/services/${id}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
@@ -20,7 +20,8 @@ const OrderPlaced = () => {
 
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
-    const url = "http://localhost:5000/orderService";
+    const url =
+      "https://tourism-react-server-side-project-assignment-11.vercel.app/orderService";
     fetch(url, {
       method: "POST",
       headers: {

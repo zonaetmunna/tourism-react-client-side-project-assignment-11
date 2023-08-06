@@ -4,7 +4,9 @@ import { Button, Card, Col, Container, Row } from "react-bootstrap";
 const ManageAllOrders = () => {
   const [orders, setOrders] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/orderService")
+    fetch(
+      "https://tourism-react-server-side-project-assignment-11.vercel.app/orderService"
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -15,7 +17,7 @@ const ManageAllOrders = () => {
   const handleDelete = (id) => {
     const proceeded = window.confirm("are you sure?");
     if (proceeded) {
-      const url = `http://localhost:5000/orderService/${id}`;
+      const url = `https://tourism-react-server-side-project-assignment-11.vercel.app/orderService/${id}`;
       fetch(url, {
         method: "DELETE",
       })

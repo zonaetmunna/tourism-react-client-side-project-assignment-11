@@ -5,7 +5,9 @@ import Service from "../Service/Service";
 const Services = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch(
+      "https://tourism-react-server-side-project-assignment-11.vercel.app/services"
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
